@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "الرئيسية";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 p-4">
+            <div class="text-center">
+
+                <i class="bi bi-person-lock" style="font-size : 60px;"></i>
+                <div class="login p-3">
+                    
+                    <h2 style="fon-size : 14px">مرحباً بعودتك</h2>
+                    <form action="Home/Login" method="post">
+                        <label>إسم المستخدم</label>
+                        <input type="text" name="name" class="form-control" value="" />
+                        <label class="mt-2">كلمة المرور</label>
+                        <input type="password" name="name" class="form-control" value="" />
+                        <button type="submit" class="btn btn-success btn-block mt-2" name="send">دخول</button>
+                    </form>
+                    <center>
+                        <a href="">ليس لدى حساب</a>
+                    </center>
+                </div>
+                <style>
+                    .login {
+                        margin: 60px auto;
+                        background-color: #fbfbfb;
+                        padding: 10px;
+                        text-align: right;
+                        width: 332px;
+                    }
+
+                        .login h2 {
+                            text-align: center;
+                            font-size: 21px;
+                        }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>
